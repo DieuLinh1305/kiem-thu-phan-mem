@@ -1,0 +1,217 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="28.2.3">
+  <diagram id="QueLWldYz6KN8JLlclpp" name="BTHM-bài 6">
+    <mxGraphModel dx="902" dy="464" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-1" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" parent="1" vertex="1">
+          <mxGeometry x="460" y="55" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-2" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="PZYZ43xPMY9KPgXcz-Kb-1" target="PZYZ43xPMY9KPgXcz-Kb-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="475" y="145" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-3" value="Main screen" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="135" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-4" value="Wait for PIN" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="670" y="135" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-5" value="wait for account verification" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1020" y="132.5" width="220" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-6" value="Entity" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="685" y="315" width="130" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-7" value="wait for selecting services" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1005" y="315" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-8" value="process&amp;nbsp;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="525" y="515" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-9" value="wait for entering amount" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="995" y="515" width="270" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-10" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" parent="1" vertex="1">
+          <mxGeometry x="420" y="765" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-11" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="PZYZ43xPMY9KPgXcz-Kb-10" target="PZYZ43xPMY9KPgXcz-Kb-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="435" y="855" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-12" value="Check card type" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="660" y="745" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-13" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="765" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-14" value="check card with bank consortium" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="610" y="915" width="230" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-15" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" parent="1" vertex="1">
+          <mxGeometry x="710" y="1055" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-16" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="PZYZ43xPMY9KPgXcz-Kb-12" target="PZYZ43xPMY9KPgXcz-Kb-13" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="790" y="895" as="sourcePoint" />
+            <mxPoint x="950" y="895" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-17" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="PZYZ43xPMY9KPgXcz-Kb-12" target="PZYZ43xPMY9KPgXcz-Kb-14" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="790" y="895" as="sourcePoint" />
+            <mxPoint x="950" y="895" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-18" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="PZYZ43xPMY9KPgXcz-Kb-14" target="PZYZ43xPMY9KPgXcz-Kb-13" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="790" y="895" as="sourcePoint" />
+            <mxPoint x="950" y="895" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1055" y="950" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-19" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="PZYZ43xPMY9KPgXcz-Kb-14" target="PZYZ43xPMY9KPgXcz-Kb-15" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="790" y="895" as="sourcePoint" />
+            <mxPoint x="950" y="895" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-20" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;curved=0;" parent="1" source="PZYZ43xPMY9KPgXcz-Kb-3" target="PZYZ43xPMY9KPgXcz-Kb-3" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="513" y="135" as="sourcePoint" />
+            <mxPoint x="620" y="75" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="510" y="115" />
+              <mxPoint x="510" y="95" />
+              <mxPoint x="510" y="65" />
+              <mxPoint x="590" y="65" />
+              <mxPoint x="590" y="152" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-21" value="insert card [invalid card]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="490" y="35" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-22" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="PZYZ43xPMY9KPgXcz-Kb-3" target="PZYZ43xPMY9KPgXcz-Kb-4" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="790" y="315" as="sourcePoint" />
+            <mxPoint x="950" y="315" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-23" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="PZYZ43xPMY9KPgXcz-Kb-4" target="PZYZ43xPMY9KPgXcz-Kb-6" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="790" y="315" as="sourcePoint" />
+            <mxPoint x="950" y="315" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-24" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="PZYZ43xPMY9KPgXcz-Kb-5" target="PZYZ43xPMY9KPgXcz-Kb-7" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="790" y="315" as="sourcePoint" />
+            <mxPoint x="950" y="315" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-25" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="PZYZ43xPMY9KPgXcz-Kb-7" target="PZYZ43xPMY9KPgXcz-Kb-9" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="790" y="495" as="sourcePoint" />
+            <mxPoint x="950" y="495" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-26" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="PZYZ43xPMY9KPgXcz-Kb-9" target="PZYZ43xPMY9KPgXcz-Kb-8" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="790" y="495" as="sourcePoint" />
+            <mxPoint x="950" y="495" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-27" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.127;exitY=0.052;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="PZYZ43xPMY9KPgXcz-Kb-9" target="PZYZ43xPMY9KPgXcz-Kb-6" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="790" y="495" as="sourcePoint" />
+            <mxPoint x="740" y="455" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1030" y="455" />
+              <mxPoint x="750" y="455" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-28" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="PZYZ43xPMY9KPgXcz-Kb-7" target="PZYZ43xPMY9KPgXcz-Kb-6" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="790" y="495" as="sourcePoint" />
+            <mxPoint x="950" y="495" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-29" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="1" source="PZYZ43xPMY9KPgXcz-Kb-6" target="PZYZ43xPMY9KPgXcz-Kb-3" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="790" y="495" as="sourcePoint" />
+            <mxPoint x="950" y="495" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="513" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-30" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="PZYZ43xPMY9KPgXcz-Kb-8" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="790" y="495" as="sourcePoint" />
+            <mxPoint x="470" y="205" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="470" y="555" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-31" value="" style="endArrow=block;startArrow=block;endFill=1;startFill=1;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="830" y="169.4999999999999" as="sourcePoint" />
+            <mxPoint x="1020" y="169.4999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-32" value="enter PIN code" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="870" y="135" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-33" value="bad PIN" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="875" y="173" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-34" value="account OK" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1125" y="245" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-35" value="user cancel action" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="750" y="245" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-36" value="user cancel action" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="850" y="325" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-37" value="operation cancel" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="530" y="325" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-38" value="user cancel action" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="815" y="425" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-39" value="select withdraw money" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1130" y="443" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-40" value="enter amount" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="785" y="525" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-41" value="transaction success" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="340" y="385" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-42" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Statechart Diagram for ATM&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="700" y="594" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-43" value="reject [not a valid ATM card]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="825" y="753" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-44" value="reject [the card issuer bank not in&lt;div&gt;the list of bank consortium&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="830" y="838" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-45" value="OK[the ATM card is valid]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="730" y="1013" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PZYZ43xPMY9KPgXcz-Kb-46" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Statechart Diagram for Card contronller&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="610" y="1105" width="300" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

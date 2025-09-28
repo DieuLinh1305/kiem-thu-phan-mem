@@ -1,0 +1,127 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="28.2.3">
+  <diagram id="X9JQh2HoOqFliiPmd4AP" name="Page-1">
+    <mxGraphModel dx="1261" dy="859" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-5" value="" style="group;fontFamily=Times New Roman;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="254" y="50" width="210" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0D427C;strokeColor=#001DBC;fontColor=#ffffff;fontFamily=Times New Roman;" parent="MyDhoX1rG-fURb0m9d2Q-5" vertex="1">
+          <mxGeometry width="210" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-2" value="" style="shape=actor;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" parent="MyDhoX1rG-fURb0m9d2Q-5" vertex="1">
+          <mxGeometry x="85" y="10" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-3" value="&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;Organizer of meeting&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;group, meetings, member of group,&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;meeting attendee&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Times New Roman;" parent="MyDhoX1rG-fURb0m9d2Q-5" vertex="1">
+          <mxGeometry x="10" y="120" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-4" value="&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;MEMBER&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Times New Roman;" parent="MyDhoX1rG-fURb0m9d2Q-5" vertex="1">
+          <mxGeometry x="65" y="70" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Times New Roman;" parent="1" source="MyDhoX1rG-fURb0m9d2Q-6" target="MyDhoX1rG-fURb0m9d2Q-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Times New Roman;" parent="1" source="MyDhoX1rG-fURb0m9d2Q-6" target="MyDhoX1rG-fURb0m9d2Q-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-6" value="My meetings" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="300" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;fontFamily=Times New Roman;" parent="1" source="MyDhoX1rG-fURb0m9d2Q-7" target="MyDhoX1rG-fURb0m9d2Q-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-7" value="Payment gateway" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="60" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Times New Roman;" parent="1" source="MyDhoX1rG-fURb0m9d2Q-8" target="MyDhoX1rG-fURb0m9d2Q-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;fontFamily=Times New Roman;" parent="1" source="MyDhoX1rG-fURb0m9d2Q-8" target="MyDhoX1rG-fURb0m9d2Q-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-8" value="Email Service" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="590" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-10" value="" style="group;fontFamily=Times New Roman;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="360" y="540" width="210" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-11" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0D427C;strokeColor=#001DBC;fontColor=#ffffff;fontFamily=Times New Roman;" parent="MyDhoX1rG-fURb0m9d2Q-10" vertex="1">
+          <mxGeometry width="210" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-12" value="" style="shape=actor;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" parent="MyDhoX1rG-fURb0m9d2Q-10" vertex="1">
+          <mxGeometry x="85" y="10" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-13" value="&lt;font color=&quot;#ffffff&quot;&gt;Administrator of the system&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Times New Roman;" parent="MyDhoX1rG-fURb0m9d2Q-10" vertex="1">
+          <mxGeometry x="25" y="145" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-14" value="&lt;font color=&quot;#ffffff&quot;&gt;ADMINISTRATOR&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Times New Roman;" parent="MyDhoX1rG-fURb0m9d2Q-10" vertex="1">
+          <mxGeometry x="45" y="70" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Times New Roman;" parent="1" source="MyDhoX1rG-fURb0m9d2Q-1" target="MyDhoX1rG-fURb0m9d2Q-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Times New Roman;" parent="1" source="MyDhoX1rG-fURb0m9d2Q-1" target="MyDhoX1rG-fURb0m9d2Q-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontFamily=Times New Roman;" parent="1" source="MyDhoX1rG-fURb0m9d2Q-11" target="MyDhoX1rG-fURb0m9d2Q-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-23" value="Pay in" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="65" y="215" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-24" value="Return info about payment" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="145" y="290" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-25" value="Delegate the payment" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="185" y="400" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-26" value="Manage members,&lt;div&gt;&amp;nbsp;meeting groups, meeting&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="315" y="470" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-27" value="Send email" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="570" y="440" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-28" value="Send email" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="570" y="180" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-29" value="Request email send" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="420" y="338" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-30" value="Organize meeting&lt;div&gt;&amp;nbsp;groups&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;and&lt;/span&gt;&lt;div&gt;&amp;nbsp;participate in meetings&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="355" y="245" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-36" value="" style="group;labelBorderColor=none;labelBackgroundColor=none;fontFamily=Times New Roman;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="70" y="530" width="170" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-31" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Legend&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;gradientColor=none;labelBorderColor=none;fontFamily=Times New Roman;" parent="MyDhoX1rG-fURb0m9d2Q-36" vertex="1">
+          <mxGeometry width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-32" value="&lt;font style=&quot;font-size: 22px; color: rgb(255, 255, 255);&quot;&gt;Person&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;gradientColor=none;fillColor=#0D427E;labelBorderColor=none;fontFamily=Times New Roman;" parent="MyDhoX1rG-fURb0m9d2Q-36" vertex="1">
+          <mxGeometry y="60" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-33" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;System&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;labelBorderColor=none;fontFamily=Times New Roman;" parent="MyDhoX1rG-fURb0m9d2Q-36" vertex="1">
+          <mxGeometry y="120" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-34" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;External person&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;labelBorderColor=none;fontFamily=Times New Roman;" parent="MyDhoX1rG-fURb0m9d2Q-36" vertex="1">
+          <mxGeometry y="180" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MyDhoX1rG-fURb0m9d2Q-35" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;External system&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;fillColor=#bac8d3;strokeColor=#23445d;labelBorderColor=none;fontFamily=Times New Roman;" parent="MyDhoX1rG-fURb0m9d2Q-36" vertex="1">
+          <mxGeometry y="240" width="170" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

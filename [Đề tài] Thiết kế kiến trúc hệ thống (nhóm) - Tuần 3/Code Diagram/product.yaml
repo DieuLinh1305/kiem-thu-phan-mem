@@ -1,0 +1,47 @@
+@startuml
+package "Product Module" {
+
+  class Product {
+    - productId: int
+    - name: string
+    - description: string
+    - price: double
+    - imageUrl: string
+    + getDetails()
+    + updateInfo()
+  }
+
+  class Category {
+    - categoryId: int
+    - name: string
+    - description: string
+    + getProducts()
+  }
+
+  class Review {
+    - reviewId: int
+    - customerId: int
+    - rating: int
+    - comment: string
+    - createdAt: datetime
+    + submitReview()
+    + editReview()
+  }
+
+  class ProductService {
+    + getProductById(productId): Product
+    + searchProducts(keyword): List<Product>
+    + getProductsByCategory(categoryId): List<Product>
+    + addReview(productId, customerId, rating, comment)
+  }
+
+  ' Quan hệ nội bộ
+  Category "1" --> "*" Product
+  Product "1" --> "*" Review
+
+  ' ProductService điều khiển các entity
+  ProductService --> Product
+  ProductService --> Category
+  ProductService --> Review
+}
+@enduml

@@ -1,0 +1,193 @@
+openapi: 3.0.4
+info:
+  title: CoolStore Service
+  version: 1.0.0
+  license:
+    name: coolstore-microservice project - Website
+    url: http://example.com
+
+externalDocs:
+  description: Send email to coolstore-microservice project
+  url: http://example.com
+  
+servers:
+  - url: http
+
+tags:
+  - name: CartService
+  - name: CatalogService
+  - name: InventoryService
+  - name: RatingService
+
+paths:
+  /cart/api/carts:
+    post:
+      tags: [CartService]
+      responses:
+        '201':
+          description: Cart created
+
+    put:
+      tags: [CartService]
+      responses:
+        '202':
+          description: Cart created
+
+  /cart/api/carts/{cart_id}:
+    get:
+      tags: [CartService]
+      responses:
+        '200':
+          description: Cart details
+
+  /cart/api/carts/{cart_id}/checkout:
+    put:
+      tags: [CartService]
+      responses:
+        '200':
+          description: Checkout completed
+
+  /cart/api/carts/{cart_id}/items/{product_id}:
+    delete:
+      tags: [CartService]
+      responses:
+        '204':
+          description: Item removed
+  
+  /catalog/api/product:
+    post:
+      tags: [CatalogService]
+      responses:
+        '201':
+          description: post CatalogService
+  
+  /catalog/api/products/{current_page}/{high_price}:
+    get:
+      tags: [CatalogService]
+      responses:
+        '200':
+          description: get {current_page}/{high_price}
+
+  /catalog/api/products/{product_id}:
+    get:
+      tags: [CatalogService]
+      responses:
+        '200':
+          description: get {product_id}
+
+  /inventory/api/availabilities:
+    get:
+      tags: [InventoryService]
+      responses:
+        '200':
+          description: List all availabilities
+
+  /inventory/api/availabilities/{id}:
+    get:
+      tags: [InventoryService]
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Availability details
+
+  /inventory/api/inventory/migrate:
+    post:
+      tags: [InventoryService]
+      responses:
+        '201':
+          description: Inventory migration started
+
+  /rating/api/ratings:
+    get:
+      tags: [RatingService]
+      responses:
+        '200':
+          description: List all ratings
+
+    post:
+      tags: [RatingService]
+      responses:
+        '201':
+          description: Rating created
+
+    put:
+      tags: [RatingService]
+      responses:
+        '200':
+          description: Rating updated
+
+  /rating/api/ratings/{product_id}:
+    get:
+      tags: [RatingService]
+      parameters:
+        - name: product_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Rating details for product
+
+components:
+  schemas:
+    Cart:
+      type: object
+      properties:
+        cart_id:
+          type: string
+        user_id:
+          type: string
+        status:
+          type: string
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/CartItem'
+        total_amount:
+          type: number
+          format: float
+
+    CartItem:
+      type: object
+      properties:
+        product_id:
+          type: string
+        quantity:
+          type: integer
+        price:
+          type: number
+          format: float
+
+    Product:
+      type: object
+      properties:
+        product_id:
+          type: string
+        name:
+          type: string
+        description:
+          type: string
+        price:
+          type: number
+          format: float
+        stock:
+          type: integer
+  securitySchemes:
+    petstore_auth:
+      type: oauth2
+      flows:
+        implicit:
+          authorizationUrl: https://petstore3.swagger.io/oauth/authorize
+          scopes:
+            "write:pets": modify pets in your account
+            "read:pets": read your pets
+    api_key:
+      type: apiKey
+      name: api_key
+      in: header

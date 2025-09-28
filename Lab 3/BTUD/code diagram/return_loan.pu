@@ -1,0 +1,76 @@
+@startuml
+
+package "Loan Aggregate" {
+  class Loan <<Entity, AR>> {
+    - LoanId id
+    - MemberId memberId
+    - DateTime borrowDate
+    - DateTime dueDate
+    - LoanStatus status
+    - List<LoanItem> items
+    + returnItem(LoanItemId, returnDate) : Fine
+    + calculateFine() : Money
+    + closeLoan()
+  }
+
+  class LoanItem <<Entity>> {
+    - LoanItemId id
+    - BookId bookId
+    - DateTime borrowedDate
+    - DateTime dueDate
+    - DateTime? returnedDate
+    - LoanItemStatus status
+    + markReturned(returnDate)
+    + isOverdue() : boolean
+  }
+
+  class Fine <<Entity>> {
+    - FineId id
+    - Money amount
+    - string reason
+    - DateTime? paidAt
+    + pay()
+  }
+
+  class LoanId <<VO>> {
+    - string value
+  }
+
+  class LoanItemId <<VO>> {
+    - string value
+  }
+
+  class MemberId <<VO>> {
+    - string value
+  }
+
+  class BookId <<VO>> {
+    - string value
+  }
+
+  ' Quan hệ trong Aggregate
+  Loan "1" *-- "0..*" LoanItem : contains
+  Loan "0..*" -- "0..*" Fine : mayGenerate
+  Loan "1" *-- "1" LoanId
+  LoanItem "1" *-- "1" LoanItemId
+  LoanItem "1" *-- "1" BookId
+  Loan "1" *-- "1" MemberId
+}
+
+package "Return Module (Application Layer)" {
+  class ReturnService {
+    + returnBook(loanId, loanItemId, returnDate) : Fine
+    + calculateFine(loanId) : Money
+    + closeLoan(loanId)
+  }
+
+  class LoanRepository <<interface>> {
+    + save(Loan)
+    + findById(LoanId) : Loan
+  }
+}
+
+ReturnService --> LoanRepository
+LoanRepository --> Loan
+
+@enduml

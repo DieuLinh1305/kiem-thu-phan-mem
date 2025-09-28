@@ -1,0 +1,55 @@
+@startuml
+
+package "Search Module (Application Layer)" {
+  class Book <<Entity, AR>> {
+    - BookId id
+    - string title
+    - Author author
+    - Publisher publisher
+    - Category category
+    - int totalCopies
+    - int availableCopies
+    + isAvailable() : boolean
+    + getInfo() : BookDTO
+  }
+
+  class BookId <<VO>> {
+  }
+
+  class Author <<VO>> {
+  }
+
+  class Publisher <<VO>> {
+  }
+
+  class Category <<VO>> {
+  }
+
+  class BookCopy <<Entity>> {
+    - CopyId id
+    - string status
+  }
+
+  ' Quan hệ trong Aggregate
+  Book "1" *-- "1" BookId
+  Book "1" *-- "1" Author
+  Book "1" *-- "1" Publisher
+  Book "1" *-- "1" Category
+  Book "1" -- "0..*" BookCopy : contains
+  
+  class SearchService {
+    + searchBooks(keyword, filter) : List<BookDTO>
+    + getBookDetail(BookId) : BookDTO
+  }
+
+  class BookRepository <<interface>> {
+    + findById(BookId) : Book
+    + findByKeyword(keyword) : List<Book>
+    + findByFilter(criteria) : List<Book>
+  }
+}
+
+SearchService --> BookRepository
+BookRepository --> Book
+
+@enduml

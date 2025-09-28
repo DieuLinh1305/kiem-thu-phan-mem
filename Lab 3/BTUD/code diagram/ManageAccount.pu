@@ -1,0 +1,57 @@
+@startuml
+
+package "Account Management Module (Application Layer)" {
+  class Member <<Entity, AR>> {
+    - MemberId id
+    - string name
+    - ContactInfo contact
+    - Role role
+    - AccountStatus status
+    - Credentials credentials
+    + activate()
+    + suspend()
+    + updateProfile(name, email, phone)
+    + authenticate(username, password) : boolean
+  }
+
+  class MemberId <<VO>> {
+    - string value
+  }
+
+  class ContactInfo <<VO>> {
+    - string email
+    - string phone
+  }
+
+  class Credentials <<VO>> {
+    - string username
+    - string passwordHash
+  }
+
+  class Role <<VO>> {
+    - string name
+  }
+
+  ' Quan hệ composition trong Aggregate
+  Member "1" *-- "1" MemberId
+  Member "1" *-- "1" ContactInfo
+  Member "1" *-- "1" Credentials
+  Member "1" *-- "1" Role
+  class AccountService {
+    + createAccount(name, email, phone, credentials, role) : Member
+    + updateProfile(memberId, info)
+    + suspendAccount(memberId)
+    + authenticate(username, password) : Member
+  }
+
+  class MemberRepository <<interface>> {
+    + save(Member)
+    + findById(MemberId) : Member
+    + findByEmail(email) : Member
+  }
+}
+
+AccountService --> MemberRepository
+MemberRepository --> Member
+
+@enduml
