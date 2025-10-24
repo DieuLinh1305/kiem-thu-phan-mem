@@ -1,0 +1,46 @@
+@startuml
+package "Inventory Module" {
+
+  class Inventory {
+    - inventoryId: int
+    - location: string
+    + updateStock(productId, qtyChange)
+    + checkAvailability(productId): bool
+    + getStock(productId): int
+  }
+
+  class StockItem {
+    - stockItemId: int
+    - productId: int
+    - quantity: int
+    + adjustStock(qtyChange)
+    + isAvailable(qty): bool
+  }
+
+  class RestockOrder {
+    - restockId: int
+    - supplier: string
+    - productId: int
+    - quantity: int
+    - orderDate: datetime
+    - status: string   ' pending, completed
+    + markCompleted()
+  }
+
+  class InventoryService {
+    + reserveStock(productId, qty): bool
+    + releaseStock(productId, qty)
+    + handleRestock(productId, qty)
+    + getInventoryReport(): List<StockItem>
+  }
+
+  ' Quan hệ nội bộ
+  Inventory "1" --> "*" StockItem
+  Inventory "1" --> "*" RestockOrder
+
+  ' Service điều khiển
+  InventoryService --> Inventory
+  InventoryService --> StockItem
+  InventoryService --> RestockOrder
+}
+@enduml

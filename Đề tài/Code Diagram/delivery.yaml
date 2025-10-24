@@ -1,0 +1,48 @@
+@startuml
+package "Delivery Module" {
+
+  class Delivery {
+    - deliveryId: int
+    - cartId: int
+    - address: string
+    - status: string       ' pending, scheduled, delivering, delivered
+    - scheduledDate: datetime
+    + scheduleDelivery()
+    + updateStatus(newStatus)
+  }
+
+  class Driver {
+    - driverId: int
+    - name: string
+    - phone: string
+    - vehicleNumber: string
+    + assignDelivery(deliveryId)
+    + updateLocation(lat, lon)
+  }
+
+  class Tracking {
+    - trackingId: int
+    - deliveryId: int
+    - currentLocation: string
+    - timestamp: datetime
+    + updateTracking(deliveryId, location)
+    + getTrackingHistory(deliveryId): List<Tracking>
+  }
+
+  class DeliveryService {
+    + createDelivery(cartId, address): Delivery
+    + assignDriver(deliveryId, driverId)
+    + updateDeliveryStatus(deliveryId, status)
+    + getTrackingInfo(deliveryId): List<Tracking>
+  }
+
+  ' Quan hệ nội bộ
+  Delivery "1" --> "1" Driver
+  Delivery "1" --> "*" Tracking
+
+  ' Service điều khiển
+  DeliveryService --> Delivery
+  DeliveryService --> Driver
+  DeliveryService --> Tracking
+}
+@enduml
