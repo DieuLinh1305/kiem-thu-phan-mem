@@ -1,0 +1,49 @@
+@startuml
+package "Cart Module" {
+
+  class Cart {
+    - cartId: int
+    - customerId: int
+    - status: string        ' active, checked_out
+    - createdAt: datetime
+    + addItem(productId, qty)
+    + removeItem(productId)
+    + calculateTotal(): double
+    + checkout()
+  }
+
+  class CartItem {
+    - cartItemId: int
+    - productId: int
+    - quantity: int
+    - price: double
+    + updateQuantity(qty)
+    + getSubtotal(): double
+  }
+
+  class Discount {
+    - discountCode: string
+    - percentage: double
+    - expiryDate: datetime
+    + isValid(): bool
+    + applyDiscount(amount: double): double
+  }
+
+  class CartService {
+    + getCart(customerId): Cart
+    + addProductToCart(customerId, productId, qty)
+    + removeProductFromCart(customerId, productId)
+    + applyDiscount(cartId, discountCode)
+    + checkout(cartId)
+  }
+
+  ' Quan hệ nội bộ
+  Cart "1" --> "*" CartItem
+  Cart "1" --> "0..1" Discount
+
+  ' CartService điều khiển Cart, CartItem, Discount
+  CartService --> Cart
+  CartService --> CartItem
+  CartService --> Discount
+}
+@enduml

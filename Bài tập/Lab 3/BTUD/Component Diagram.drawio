@@ -1,0 +1,117 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="28.2.5">
+  <diagram name="Page-1" id="b5b7bab2-c9e2-2cf4-8b2a-24fd1a2a6d21">
+    <mxGraphModel grid="0" page="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WxuDUXIUg6ZILzP7e0HZ-1" value="Web Application&lt;div&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;[Container: React/Argular]&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&quot;Giao diện trên trình duyệt cho người đọc và thủ thư&quot;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#000066;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="412" y="430" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WxuDUXIUg6ZILzP7e0HZ-2" value="" style="swimlane;startSize=0;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="34" y="560" width="956" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="WxuDUXIUg6ZILzP7e0HZ-3" value="Account Management Module&lt;div&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;[Component: Spring MVC Rest Controller]&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&quot;Quản lý thông tin tài khoản: đăng nhập, đăng ký, đổi mật khẩu, lịch sử mượn sách.&quot;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="WxuDUXIUg6ZILzP7e0HZ-2">
+          <mxGeometry x="56" y="60" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WxuDUXIUg6ZILzP7e0HZ-4" value="Security Component&lt;div&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;[Component: Spring Bean&lt;/font&gt;]&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&quot;Cung cấp chức năng bảo mật: xác thực, phân quyền, quản lý phiên đăng nhập, mã hóa mật khẩu.&quot;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="WxuDUXIUg6ZILzP7e0HZ-2">
+          <mxGeometry x="40" y="240" width="315" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WxuDUXIUg6ZILzP7e0HZ-5" value="Borrow/Return Module&lt;div&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;[Component: Spring MVC Rest Controller]&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&quot;Xử lý yêu cầu mượn sách, trả sách, gia hạn, kiểm tra trạng thái sách.&quot;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="WxuDUXIUg6ZILzP7e0HZ-2">
+          <mxGeometry x="355" y="60" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WxuDUXIUg6ZILzP7e0HZ-6" value="Search Module&lt;div&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;[Component: Spring MVC Rest Controller]&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&quot;Cho phép tìm kiếm sách theo tên, tác giả, thể loại, tình trạng (còn/mượn).&quot;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="WxuDUXIUg6ZILzP7e0HZ-2">
+          <mxGeometry x="666" y="60" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WxuDUXIUg6ZILzP7e0HZ-17" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WxuDUXIUg6ZILzP7e0HZ-2" source="WxuDUXIUg6ZILzP7e0HZ-3" target="WxuDUXIUg6ZILzP7e0HZ-4">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="346" y="140" as="sourcePoint" />
+            <mxPoint x="506" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WxuDUXIUg6ZILzP7e0HZ-7" value="&lt;font&gt;Payment System&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;[Software System]&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&quot;Hệ thống bên ngoài dùng để xử lý thanh toán phí thành viên và phí trễ hạn.&quot;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#647687;strokeColor=#314354;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="740" y="950" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="WxuDUXIUg6ZILzP7e0HZ-8" value="&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;Database&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 8px; color: rgb(255, 255, 255);&quot;&gt;[Container: Relational Database Schema]&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 8px; color: rgb(255, 255, 255);&quot;&gt;&quot;Lưu trữ thông tin người đọc, sách, thủ thư, giao dịch mượn trả, phí trễ hạn.&quot;&lt;/font&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#000066;" vertex="1" parent="1">
+          <mxGeometry x="299" y="960" width="230" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="WxuDUXIUg6ZILzP7e0HZ-11" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WxuDUXIUg6ZILzP7e0HZ-1" target="WxuDUXIUg6ZILzP7e0HZ-3">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="380" y="700" as="sourcePoint" />
+            <mxPoint x="540" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WxuDUXIUg6ZILzP7e0HZ-12" value="Makes API calls to&lt;div&gt;[JSON/HTTPS]&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="WxuDUXIUg6ZILzP7e0HZ-11">
+          <mxGeometry x="-0.1512" y="5" relative="1" as="geometry">
+            <mxPoint x="15" y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WxuDUXIUg6ZILzP7e0HZ-13" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WxuDUXIUg6ZILzP7e0HZ-1" target="WxuDUXIUg6ZILzP7e0HZ-5">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="380" y="700" as="sourcePoint" />
+            <mxPoint x="540" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WxuDUXIUg6ZILzP7e0HZ-14" value="Makes API calls to&lt;div&gt;[JSON/HTTPS]&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="WxuDUXIUg6ZILzP7e0HZ-13">
+          <mxGeometry x="-0.3381" y="-1" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WxuDUXIUg6ZILzP7e0HZ-15" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WxuDUXIUg6ZILzP7e0HZ-1" target="WxuDUXIUg6ZILzP7e0HZ-6">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="380" y="700" as="sourcePoint" />
+            <mxPoint x="540" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WxuDUXIUg6ZILzP7e0HZ-16" value="Makes API calls to&lt;div&gt;[JSON/HTTPS]&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="WxuDUXIUg6ZILzP7e0HZ-15">
+          <mxGeometry x="-0.4162" y="-3" relative="1" as="geometry">
+            <mxPoint x="22" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WxuDUXIUg6ZILzP7e0HZ-19" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="WxuDUXIUg6ZILzP7e0HZ-4" target="WxuDUXIUg6ZILzP7e0HZ-8">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="380" y="900" as="sourcePoint" />
+            <mxPoint x="540" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WxuDUXIUg6ZILzP7e0HZ-20" value="Reads from and&amp;nbsp;&lt;div&gt;writes to (JDBC)&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="WxuDUXIUg6ZILzP7e0HZ-19">
+          <mxGeometry x="-0.2206" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WxuDUXIUg6ZILzP7e0HZ-21" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.722;entryY=-0.002;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="WxuDUXIUg6ZILzP7e0HZ-5" target="WxuDUXIUg6ZILzP7e0HZ-8">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="380" y="900" as="sourcePoint" />
+            <mxPoint x="540" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WxuDUXIUg6ZILzP7e0HZ-23" value="Reads from and&amp;nbsp;&lt;div&gt;writes to (JDBC)&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="WxuDUXIUg6ZILzP7e0HZ-21">
+          <mxGeometry x="0.2368" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WxuDUXIUg6ZILzP7e0HZ-22" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=15;entryPerimeter=0;" edge="1" parent="1" source="WxuDUXIUg6ZILzP7e0HZ-6" target="WxuDUXIUg6ZILzP7e0HZ-8">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="380" y="900" as="sourcePoint" />
+            <mxPoint x="540" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WxuDUXIUg6ZILzP7e0HZ-24" value="Reads from and&amp;nbsp;&lt;div&gt;writes to (JDBC)&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="WxuDUXIUg6ZILzP7e0HZ-22">
+          <mxGeometry x="0.2259" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WxuDUXIUg6ZILzP7e0HZ-25" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="WxuDUXIUg6ZILzP7e0HZ-5" target="WxuDUXIUg6ZILzP7e0HZ-7">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="380" y="900" as="sourcePoint" />
+            <mxPoint x="540" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WxuDUXIUg6ZILzP7e0HZ-27" value="Sends payments&lt;div&gt;(JSON/HTTPS)&amp;nbsp;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="WxuDUXIUg6ZILzP7e0HZ-25">
+          <mxGeometry x="0.2632" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

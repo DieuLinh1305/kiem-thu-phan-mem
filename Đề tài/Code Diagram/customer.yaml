@@ -1,0 +1,41 @@
+@startuml
+package "Customer Module" {
+  
+  class Customer {
+    - customerId: int
+    - name: string
+    - email: string
+    - phone: string
+    - password: string
+    + register()
+    + login()
+    + updateProfile()
+  }
+
+  class Address {
+    - addressId: int
+    - street: string
+    - city: string
+    - zipcode: string
+    + validateAddress()
+  }
+
+  class CustomerProfile {
+    - profileId: int
+    - dob: date
+    - gender: string
+    - preferences: string
+    + updatePreferences()
+  }
+
+  class CustomerService {
+    + createCustomer()
+    + authenticate(email, password)
+    + updateCustomerInfo()
+    + getCustomerOrders()
+  }
+
+  Customer "1" --> "*" Address
+  Customer "1" --> "1" CustomerProfile
+}
+@enduml

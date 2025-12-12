@@ -1,0 +1,45 @@
+@startuml
+package "Payment Module" {
+
+  class Payment {
+    - paymentId: int
+    - cartId: int
+    - amount: double
+    - status: string       ' pending, completed, failed
+    - method: string       ' creditCard, wallet, COD
+    - createdAt: datetime
+    + processPayment()
+    + refund()
+  }
+
+  class Transaction {
+    - transactionId: int
+    - paymentId: int
+    - timestamp: datetime
+    - confirmationCode: string
+    + verifyTransaction()
+  }
+
+  class PaymentMethod {
+    - methodId: int
+    - type: string         ' Visa, MasterCard, MoMo, ZaloPay...
+    - details: string
+    + validate()
+  }
+
+  class PaymentService {
+    + initiatePayment(cartId, method): Payment
+    + confirmPayment(paymentId): Transaction
+    + handleRefund(paymentId)
+  }
+
+  ' Quan hệ nội bộ
+  Payment "1" --> "1" PaymentMethod
+  Payment "1" --> "*" Transaction
+
+  ' Service điều khiển
+  PaymentService --> Payment
+  PaymentService --> PaymentMethod
+  PaymentService --> Transaction
+}
+@enduml
